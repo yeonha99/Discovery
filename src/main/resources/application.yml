@@ -11,4 +11,4 @@ eureka:
     fetch-registry: false
     prefer-ip-address: true
     serviceUrl:
-      defaultZone: http://3.35.51.218:8761/eureka/
+      defaultZone: http://172.20.113.40:8761/eureka/
