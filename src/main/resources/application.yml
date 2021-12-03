@@ -7,10 +7,9 @@ spring:
 
 eureka:
   instance:
-    statusPageUrlPath: ${server.servletPath}/info
-    healthCheckUrlPath: ${server.servletPath}/health
+    hostname: eureka
   client:
-    register-with-eureka: true
+    register-with-eureka: false
     fetch-registry: false
     #serviceUrl:
       #defaultZone: http://3.36.85.165:8761/eureka/
