@@ -3,6 +3,7 @@ package com.example.Discovery;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -29,7 +30,6 @@ import java.util.Arrays;
 
             super.configure(http);
         }
-
 
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
