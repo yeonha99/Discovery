@@ -6,6 +6,9 @@ spring:
     name: eureka-service
 
 eureka:
+  instance:
+    statusPageUrlPath: ${server.servletPath}/info
+    healthCheckUrlPath: ${server.servletPath}/health
   client:
     register-with-eureka: true
     fetch-registry: false
