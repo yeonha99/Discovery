@@ -10,7 +10,11 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
         @Override
         protected void configure(HttpSecurity http) throws Exception {
-            http.csrf().ignoringAntMatchers("/eureka/**");
+            http.csrf().ignoringAntMatchers("/eureka/**")
+                    .and()
+                    .authorizeRequests()
+                    .antMatchers( "/**").permitAll();
+
             super.configure(http);
         }
     }
