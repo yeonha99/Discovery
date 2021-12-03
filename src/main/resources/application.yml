@@ -22,6 +22,6 @@ management:
   endpoint:
     web:
       exposure:
-        include: *
+        include: '*'
     metrics:
       enabled: true
