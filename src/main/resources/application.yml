@@ -13,7 +13,7 @@ eureka:
     fetch-registry: false
     #serviceUrl:
       #defaultZone: http://3.36.85.165:8761/eureka/
-
+#테스트
 management:
   metrics:
     export:
